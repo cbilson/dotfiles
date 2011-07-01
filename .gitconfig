@@ -1,0 +1,55 @@
+[user]
+	name = Chris Bilson
+	email = cbilson@pobox.com
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = true
+
+[merge]
+	keepBackup = false
+	tool = bc
+	ff = false
+
+[mergetool "bc"]
+	cmd = bcompare $LOCAL $REMOTE $BASE $MERGED
+	keepBackup = false
+	trustExitCode = true
+
+[diff]
+	guitool = bc
+
+#[difftool]
+#	prompt = false
+
+[difftool "bc"]
+	cmd = bcompare $2 $5
+
+[branch "master"]
+	mergeoptions = --no-ff
+	rebase = true
+
+[branch]
+	autosetuprebase = always
+
+[alias]
+	br = branch
+	ci = commit
+	cia = commit --amend
+	cim = commit --message
+	co = checkout
+	cp = cherry-pick
+	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	m = merge
+	po = push origin
+	pom = push origin master
+	rb = rebase
+	rbc = rebase --continue
+	rbs = rebase --skip
+	rl = reflog
+	sb = show-branch
+	st = status
+	staged = diff --cached
+
