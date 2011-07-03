@@ -1,0 +1,12 @@
+<TemplatesExport>
+  <Template uid="b5dfc4cd-9cc4-4765-8f10-c814dfec8add" shortcut="fa" description="" text="[Fact]&#xD;&#xA;public void $what_I_want$()&#xD;&#xA;{&#xD;&#xA;	$END$&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="TypeMember" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="what_I_want" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
